@@ -13,7 +13,16 @@ function writePassword() {
         let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
         let specialCharacters = ["[\]","^", ".","!", "@", "#", "$", "%", "{","}", "&", "*", "(", ")", "+", ",", "-", "/", ";", "?", "]", "|", "`"];
         let passCharacters = []
-
+// function to generate password
+function generatePassword() {
+    let passLength = parseInt(prompt("How many characters would you like your password to be (must be from 8-128)"));
+//range for acceptable user prompt input
+    if (passLength > 128 || passLength < 8 || isNaN(passLength) ) { 
+        alert("Please ensure value entered is a number and the number is from 8-128");
+        return generatePassword();
+    } else{
+        window.alert("Your password will be " + passLength+ " characters long" );
+    }
 
 
 
