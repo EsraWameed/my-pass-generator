@@ -70,10 +70,23 @@ function generatePassword() {
             if (charSymbol) {
     console.log(userInput = userInput.concat(specialCharacters));
         }
+//created for loop so we could generate a randomized password depending on user character options and pass length
+for (var i = 0; i < passLength; i++) {
+    var randomNum = Math.floor(Math.random() * userInput.length);
+    var character = userInput[randomNum];
+    console.log(character);
+    passCharacters.push(character);
+}
 
-
+return passCharacters.join("");
+}
 
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", restarting);
+
+function restarting() {
+    passCharacters = []
+    writePassword();
+};
