@@ -16,6 +16,7 @@ Users are then asked to select at least one of the following character options: 
 - javaScript: to generate pass-word generator functionality.
 
 ## Deployed Application
+https://esrawameed.github.io/my-pass-generator/
 
 ### Image 1
 ![Alt text](assets/images/image1.png "Final Look")
