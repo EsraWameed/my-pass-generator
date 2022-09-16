@@ -54,7 +54,22 @@ function generatePassword() {
             alert("You must make at least one character type selection! Click 'Generate Password' button to try again.")
             return null;
         }
+// strings that will be joined dependeing on user selection
+            if (UpperCasing) {
+    userInput = userInput.concat(upperCase);
+        }
 
+            if (lowerCasing) {
+    console.log(userInput = userInput.concat(lowerCase));
+        }
+
+            if (passNumber) {
+    console.log(userInput = userInput.concat(numbers));
+        }
+
+            if (charSymbol) {
+    console.log(userInput = userInput.concat(specialCharacters));
+        }
 
 
 
