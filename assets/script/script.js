@@ -49,7 +49,11 @@ function generatePassword() {
             }else{
             window.alert("your password will NOT contain a symbol");
         }
-
+// this is the alert users will see if they didn't make at least one selection
+            if (!UpperCasing && !lowerCasing && !passNumber && !charSymbol) {
+            alert("You must make at least one character type selection! Click 'Generate Password' button to try again.")
+            return null;
+        }
 
 
 
